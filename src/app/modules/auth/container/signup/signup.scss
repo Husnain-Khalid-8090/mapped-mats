@@ -1,0 +1,27 @@
+@import '../../../../../scss/variables';
+
+
+.loginContainer {
+  height: 100%;
+  color: $textColor;
+  background: $primary;
+  text-align: center;
+}
+.signup{
+  background: $disableColorBg;
+  margin: 30px 20px 30px 0;
+  padding-top: 9px;
+  padding-left: 15px;
+  border-radius: 6px;
+  border: 1px solid $borderColor;
+}
+.signupActive{
+  background: $activeColorBg;
+  border: 1px solid $primary;
+  .MuiTypography-root{
+    color: $primary;
+  }
+  .css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+    color: $primary;
+  }
+}

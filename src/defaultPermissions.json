@@ -1,0 +1,141 @@
+[
+  {
+    "route": "/admin/companies",
+    "description": "Can View the companies in side nav",
+    "can": "admin.companies",
+    "parent": [
+      "admin"
+    ]
+  },
+  {
+    "route": "/admin/companies/updateStatus",
+    "description": "Can Update the Company Status",
+    "can": "admin.companies.updateStatus",
+    "parent": [
+      "admin"
+    ]
+  },
+  {
+    "route": "/admin/companies/invite",
+    "description": "Can Invite Company for Signup",
+    "can": "admin.companies.invite",
+    "parent": [
+      "admin"
+    ]
+  },
+  {
+    "route": "/admin/companies/:company_id/deleteCompany",
+    "description": "Can Update the Company Status",
+    "can": "admin.companies.deleteCompany",
+    "parent": [
+      "admin"
+    ]
+  },
+  {
+    "route": "/admin/companies/:company_id/updateCompanyInfo",
+    "description": "Can Update the Company Info",
+    "can": "admin.companies.updateCompanyInfo",
+    "parent": [
+      "admin"
+    ]
+  },
+  {
+    "route": "/admin/companies/company/:company_id/",
+    "description": "Can View the company details",
+    "can": "admin.companies.company",
+    "parent": [
+      "admin"
+    ]
+  },
+
+
+  {
+    "route": "/profile",
+    "description": "Can Update Own Profile",
+    "can": "auth.user.updateMe",
+    "parent": [
+      "auth"
+    ]
+  },
+  {
+    "route": "/companies/company/:id/users",
+    "description": "Can view users of own company",
+    "can": "companies.company.users",
+    "parent": [
+      "companies"
+    ]
+  },
+  {
+    "route": "/companies/company/updateUserStatus",
+    "description": "Can Update company userStatus",
+    "can": "companies.company.updateUserStatus",
+    "parent": [
+      "companies"
+    ]
+  },
+  {
+    "route": "/companies/company/deleteUser",
+    "description": "Can Delete Company User",
+    "can": "companies.company.deleteUser",
+    "parent": [
+      "companies"
+    ]
+  },
+  {
+    "route": "/companies/company/inviteUser",
+    "description": "Can invite User for Company",
+    "can": "companies.company.inviteUser",
+    "parent": [
+      "companies"
+    ]
+  },
+  {
+    "route": "/companies/company/createDepartment",
+    "description": "Can create department for own company",
+    "can": "companies.company.createDepartment",
+    "parent": [
+      "companies"
+    ]
+  },
+
+  {
+    "route": "/companies/company/updateDepartment",
+    "description": "Can update company department",
+    "can": "companies.company.updateDepartment",
+    "parent": [
+      "companies"
+    ]
+  },
+  {
+    "route": "/companies/company/:companyId/getDepartment/:id",
+    "description": "Can view company department",
+    "can": "companies.company.getDepartment",
+    "parent": [
+      "companies"
+    ]
+  },
+  {
+    "route": "/companies/company/:companyId/getAllDepartments",
+    "description": "Can view company departments",
+    "can": "companies.company.getAllDepartments",
+    "parent": [
+      "companies"
+    ]
+  },
+  {
+    "route": "/companies/company/deleteDepartment/:departmentId",
+    "description": "Can update company department",
+    "can": "companies.company.deleteDepartment",
+    "parent": [
+      "companies"
+    ]
+  },
+  {
+    "route": "/companies/company/:companyId/updateCompanyBasicInfoSelf",
+    "description": "Can update owm company",
+    "can": "companies.company.updateCompanyBasicInfoSelf",
+    "parent": [
+      "companies"
+    ]
+  }
+]
